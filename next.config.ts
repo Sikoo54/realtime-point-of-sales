@@ -8,13 +8,12 @@ const nextConfig: NextConfig = {
   },
   devIndicators: false,
   images: {
-    domains: ["https://zrfywyajdtqwwjiobeys.supabase.co"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "zrfywyajdtqwwjiobeys.supabase.co",
+        hostname: "jiskuwjiwuwrhhjsywja.supabase.co",
         port: "",
-        pathname: "/**",
+        pathname: "/storage/v1/object/public/**",
       },
     ],
   },
