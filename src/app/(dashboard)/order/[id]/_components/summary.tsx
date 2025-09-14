@@ -34,6 +34,9 @@ export default function Summary({
   const isAllServed = useMemo(() => {
     return orderMenu?.every((item) => item.status === "served");
   }, [orderMenu]);
+  const isEmptyOrder = useMemo(() => {
+    return !orderMenu || orderMenu.length === 0;
+  }, [orderMenu]);
 
   const [
     generatePaymentState,
@@ -105,7 +108,9 @@ export default function Summary({
             <Button
               type="submit"
               onClick={handleGeneratePayment}
-              disabled={!isAllServed || isPendingGeneratePayment}
+              disabled={
+                isEmptyOrder || !isAllServed || isPendingGeneratePayment
+              }
               className="w-full font-semibold bg-teal-500 hover:bg-teal-600 text-white cursor-pointer"
             >
               {isPendingGeneratePayment ? (
