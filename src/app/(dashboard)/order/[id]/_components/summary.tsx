@@ -111,7 +111,7 @@ export default function Summary({
               disabled={
                 isEmptyOrder || !isAllServed || isPendingGeneratePayment
               }
-              className="w-full font-semibold bg-teal-500 hover:bg-teal-600 text-white cursor-pointer"
+              className="w-full font-semibold bg-fuchsia-800 hover:bg-fuchsia-900 text-white cursor-pointer"
             >
               {isPendingGeneratePayment ? (
                 <Loader2 className="animate-spin" />

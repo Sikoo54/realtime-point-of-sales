@@ -59,7 +59,9 @@ export default function Login() {
     <Card>
       <CardHeader className="text-center">
         <CardTitle className="text-xl">Welcome</CardTitle>
-        <CardDescription>Login to access all features</CardDescription>
+        <CardDescription>Account for Demo</CardDescription>
+        <CardDescription>Email : sachafirmansyah@gmail.com</CardDescription>
+        <CardDescription>Password : 123456</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>

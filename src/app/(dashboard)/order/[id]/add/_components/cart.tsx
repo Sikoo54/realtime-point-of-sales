@@ -119,7 +119,7 @@ export default function CartSection({
           )}
           <Button
             onClick={() => onOrder()}
-            className="w-full font-semibold bg-teal-500 hover:bg-teal-600 cursor-pointer text-white"
+            className="w-full font-semibold bg-fuchsia-800 hover:bg-fuchsia-900 cursor-pointer text-white"
           >
             {isLoading ? <Loader2 className="animate-spin" /> : "Order"}
           </Button>
