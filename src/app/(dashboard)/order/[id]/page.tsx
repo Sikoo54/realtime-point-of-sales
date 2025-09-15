@@ -3,7 +3,7 @@ import DetailOrder from "./_components/detail-order";
 import { environment } from "@/configs/environment";
 
 export const metadata = {
-  title: "WPU Cafe | Detail Order",
+  title: "Serenité Cafe | Detail Order",
 };
 
 declare global {
